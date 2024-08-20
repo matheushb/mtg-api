@@ -5,7 +5,7 @@ import { SigninDto } from './dtos/signin.dto';
 import { JwtAuthGuard } from './guards/jwt-auth.guard';
 
 @ApiTags('auth')
-@Controller()
+@Controller('auth')
 export class AuthController {
   @UseGuards(LocalAuthGuard)
   @ApiBody({ type: SigninDto })
