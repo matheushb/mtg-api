@@ -4,6 +4,11 @@ import { Role } from '@prisma/client';
 import { BcryptService } from 'src/common/bcrypt/bcrypt.service';
 import { UserService } from 'src/modules/user/user.service';
 
+export type UserFromRequest = {
+  email: string;
+  id: string;
+  role: Role;
+};
 @Injectable()
 export class AuthService {
   constructor(
@@ -21,7 +26,7 @@ export class AuthService {
     return null;
   }
 
-  async login(user: { email: string; id: string; role: Role }) {
+  async login(user: UserFromRequest) {
     const payload = { email: user.email, sub: user.id, role: user.role };
     return {
       access_token: this.jwtService.sign(payload),
