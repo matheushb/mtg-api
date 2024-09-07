@@ -1,5 +1,5 @@
 generator client {
-  provider = "prisma-client-js"
+provider = "prisma-client-js"
 }
 
 datasource db {
@@ -13,12 +13,56 @@ model User {
   email         String   @unique
   password      String
   role          Role     @default(USER)
-  refresh_token String?
   created_at    DateTime @default(now())
   updated_at    DateTime @updatedAt
+  Deck Deck[]
+}
+
+model Deck {
+  id         String   @id @default(uuid())
+  name       String
+  user       User     @relation(fields: [user_id], references: [id])
+  user_id    String
+  cards      CardDeck[] 
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
+
+model Card {
+  id                String    @id @default(cuid())
+  name              String    
+  released_date     DateTime  
+  mana_cost         String
+  type              String
+  text              String
+  power             Int?
+  toughness         Int?
+  colors            String[]
+  cmc               Int
+  rarity            Rarity
+  price_in_usd      Float
+  foil_price_in_usd Float
+  decks             CardDeck[] 
+}
+
+model CardDeck {
+  deck   Deck   @relation(fields: [deck_id], references: [id])
+  deck_id String
+
+  card   Card   @relation(fields: [card_id], references: [id])
+  card_id String
+
+  @@id([deck_id, card_id]) 
 }
 
 enum Role {
   ADMIN
   USER
+}
+
+enum Rarity {
+  COMMON
+  UNCOMMON
+  RARE
+  MYTHIC
 }
