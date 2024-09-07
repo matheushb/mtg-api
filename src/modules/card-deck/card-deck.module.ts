@@ -6,5 +6,6 @@ import { CardDeckRepository } from './card-deck.repository';
 @Module({
   controllers: [CardDeckController],
   providers: [CardDeckService, CardDeckRepository],
+  exports: [CardDeckService],
 })
 export class CardDeckModule {}
