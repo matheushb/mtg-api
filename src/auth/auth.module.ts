@@ -15,7 +15,7 @@ import { BcryptModule } from 'src/common/bcrypt/bcrypt.module';
     BcryptModule,
     PassportModule,
     JwtModule.registerAsync({
-      imports: [ConfigModule],
+      imports: [ConfigModule, UserModule],
       useFactory: (configService: ConfigService) => ({
         secret: configService.get('JWT_SECRET'),
         signOptions: { expiresIn: '7d' },
