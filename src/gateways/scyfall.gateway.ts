@@ -1,25 +1,37 @@
-import { Injectable } from '@nestjs/common';
+import { BadRequestException, Injectable } from '@nestjs/common';
 import axios, { AxiosInstance } from 'axios';
 import { writeFileSync } from 'fs';
+import { UserFromRequest } from 'src/auth/auth.service';
+import { CardDeckService } from 'src/modules/card-deck/card-deck.service';
+import { CardsService } from 'src/modules/cards/cards.service';
+import { DecksService } from 'src/modules/deck/deck.service';
 
 @Injectable()
 export class ScyfallGateway {
   private axios: AxiosInstance;
 
-  constructor() {
+  constructor(
+    private readonly cardsService: CardsService,
+    private readonly decksService: DecksService,
+    private readonly cardDeckService: CardDeckService,
+  ) {
     this.axios = axios.create({
       baseURL: 'https://api.scryfall.com/cards',
     });
   }
 
-  async getLeader() {
+  async getLeader(user: UserFromRequest, deckName: string, color: string) {
+    if (color && !/[WUBRG]/.test(color)) {
+      throw new BadRequestException('Invalid color string, must be WUBRG');
+    }
+
     const leaderResponse = await this.axios.get(
-      'search?q=type:legendary+type:creature&order=random',
+      `search?q=type:legendary+type:creature${
+        color ? `+color=${color}` : ''
+      }&order=random`,
     );
 
-    const leader = await leaderResponse.data.data[
-      Math.ceil(Math.random() * 20)
-    ];
+    const leader = leaderResponse.data.data[0];
 
     const colors = leader.colors.join('');
     const cards = [];
@@ -37,8 +49,8 @@ export class ScyfallGateway {
       cmc: leader.cmc,
       keywords: leader.keywords,
       rarity: leader.rarity,
-      price_in_usd: leader.prices.usd ?? 0,
-      foil_price_in_usd: leader.prices.usd_foil ?? 0,
+      price_in_usd: leader.prices?.usd ?? 0,
+      foil_price_in_usd: leader.prices?.usd_foil ?? 0,
     });
 
     const cardsResponse = await this.axios.get(
@@ -46,10 +58,13 @@ export class ScyfallGateway {
     );
 
     let x = 0;
-    while (cards.length < 100 && x++ <= cardsResponse.data.data.length) {
+    while (cards.length < 100 && x < cardsResponse.data.data.length) {
       const card = cardsResponse.data.data[x];
 
-      if (card.name.includes('//')) continue;
+      if (card.name.includes('//')) {
+        x++;
+        continue;
+      }
 
       if (
         card.type_line === 'Instant' ||
@@ -68,8 +83,8 @@ export class ScyfallGateway {
           cmc: card.cmc,
           keywords: card.keywords,
           rarity: card.rarity,
-          price_in_usd: card.prices.usd ?? 0,
-          foil_price_in_usd: card.prices.usd_foil ?? 0,
+          price_in_usd: card.prices?.usd ?? 0,
+          foil_price_in_usd: card.prices?.usd_foil ?? 0,
         });
       } else {
         cards.push({
@@ -85,15 +100,47 @@ export class ScyfallGateway {
           cmc: card.cmc,
           keywords: card.keywords,
           rarity: card.rarity,
-          price_in_usd: card.prices.usd ?? 0,
-          foil_price_in_usd: card.prices.usd_foil ?? 0,
+          price_in_usd: card.prices?.usd ?? 0,
+          foil_price_in_usd: card.prices?.usd_foil ?? 0,
         });
       }
+      x++;
     }
 
-    console.log(cards);
+    const deck = await this.decksService.create({
+      name: deckName,
+      user_id: user.id,
+    });
+
+    const createdCardsPromises = cards.map((card) =>
+      this.cardsService.create({
+        id: card.id,
+        name: card.name,
+        released_date: new Date(card.released_date),
+        mana_cost: card.mana_cost,
+        type: card.type,
+        text: card.text,
+        power: card.power ? Number(card.power) : undefined,
+        toughness: card.toughness ? Number(card.toughness) : undefined,
+        colors: card.colors,
+        cmc: card.cmc,
+        rarity: card.rarity.toUpperCase(),
+        price_in_usd: Number(card.price_in_usd),
+        foil_price_in_usd: Number(card.foil_price_in_usd),
+      }),
+    );
+
+    await Promise.all(createdCardsPromises);
+
+    const createdCardsDataPromises = cards.map((card) =>
+      this.cardDeckService.create({
+        card_id: card.id,
+        deck_id: deck.id,
+      }),
+    );
+
+    await Promise.all(createdCardsDataPromises);
+
     writeFileSync('deck.json', JSON.stringify(cards, null, 2));
-    console.log(cards.length);
-    console.log(leader);
   }
 }
