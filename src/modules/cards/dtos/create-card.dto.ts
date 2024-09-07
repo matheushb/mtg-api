@@ -4,6 +4,10 @@ import { IsEnum, IsNumber, IsOptional, IsString } from 'class-validator';
 
 export class CreateCardDto {
   @IsString()
+  @ApiPropertyOptional()
+  id?: string;
+
+  @IsString()
   @ApiProperty()
   name: string;
 
