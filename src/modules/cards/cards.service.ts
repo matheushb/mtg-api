@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { BadRequestException, Injectable } from '@nestjs/common';
 import { CardsRepository } from './cards.repository';
 import { CreateCardDto } from './dtos/create-card.dto';
 import { UpdateCardDto } from './dtos/update-card.dto';
@@ -8,6 +8,9 @@ export class CardsService {
   constructor(private readonly cardsRepository: CardsRepository) {}
 
   async create(createCardDto: CreateCardDto) {
+    if (isNaN(new Date(createCardDto.released_date).getTime()))
+      throw new BadRequestException('Invalid Date');
+    createCardDto.released_date = new Date(createCardDto.released_date);
     return await this.cardsRepository.create(createCardDto);
   }
 
