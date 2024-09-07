@@ -9,5 +9,5 @@ export class SigninDto {
 
   @ApiProperty()
   @IsString()
-  pass: string;
+  password: string;
 }
