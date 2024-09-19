@@ -11,6 +11,8 @@ services:
       - 5431:5432
     volumes:
       - mtg_db:/var/lib/postgresql/data
+    networks:
+      - mtg_network
 
   redis:
     container_name: redis
@@ -18,6 +20,15 @@ services:
     restart: always
     ports:
       - 6379:6379
+    volumes:
+      - redis_data:/data
+    networks:
+      - mtg_network
 
 volumes:
   mtg_db: {}
+  redis_data: {}
+
+networks:
+  mtg_network:
+    driver: bridge
