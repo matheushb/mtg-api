@@ -40,7 +40,7 @@ export class CardsController {
     };
   }
 
-  @Get(':id')
+  @Get('id/:id')
   async findOne(@Param('id') id: string) {
     const card = await this.cardsService.findOne(id);
     return {
@@ -48,7 +48,7 @@ export class CardsController {
     };
   }
 
-  @Patch(':id')
+  @Patch('id/:id')
   async update(@Param('id') id: string, @Body() updateCardDto: UpdateCardDto) {
     const updatedCard = await this.cardsService.update(id, updateCardDto);
     return {
@@ -56,7 +56,7 @@ export class CardsController {
     };
   }
 
-  @Delete(':id')
+  @Delete('id/:id')
   @HttpCode(HttpStatus.NO_CONTENT)
   async delete(@Param('id') id: string) {
     await this.cardsService.delete(id);

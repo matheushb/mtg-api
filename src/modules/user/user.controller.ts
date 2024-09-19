@@ -44,7 +44,7 @@ export class UserController {
     };
   }
 
-  @Get(':id')
+  @Get('id/:id')
   async findOne(@Param('id') id: string) {
     const user = await this.userService.findOne(id);
     return {
@@ -52,7 +52,7 @@ export class UserController {
     };
   }
 
-  @Patch(':id')
+  @Patch('id/:id')
   async update(@Param('id') id: string, @Body() updateUserDto: UpdateUserDto) {
     const updatedUser = await this.userService.update(id, updateUserDto);
     return {
@@ -60,7 +60,7 @@ export class UserController {
     };
   }
 
-  @Delete(':id')
+  @Delete('id/:id')
   @HttpCode(HttpStatus.NO_CONTENT)
   async delete(@Param('id') id: string) {
     await this.userService.delete(id);
