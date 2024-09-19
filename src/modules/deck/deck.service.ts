@@ -3,6 +3,10 @@ import { CACHE_MANAGER, Cache } from '@nestjs/cache-manager';
 import { DecksRepository } from './deck.repository';
 import { CreateDeckDto } from './dtos/create-deck.dto';
 import { UpdateDeckDto } from './dtos/update-deck.dto';
+import {
+  allowedFilters,
+  DeckFilterParams,
+} from 'src/common/filters/deck-filter.params';
 
 @Injectable()
 export class DecksService {
@@ -15,10 +19,17 @@ export class DecksService {
     return await this.decksRepository.create(createDeckDto);
   }
 
-  async findAll() {
-    const decks = await this.decksRepository.findAll();
+  async findAll(deckFilter: DeckFilterParams) {
+    const filter = {};
 
-    return decks;
+    for (const allowedFilter of allowedFilters) {
+      if (deckFilter[allowedFilter]) {
+        if (allowedFilter === 'userId') {
+          filter['user_id'] = deckFilter[allowedFilter];
+        }
+      }
+    }
+    return await this.decksRepository.findAll(filter);
   }
 
   async findOne(id: string) {
