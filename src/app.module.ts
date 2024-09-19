@@ -1,4 +1,5 @@
 import { Module } from '@nestjs/common';
+import { CacheModule } from '@nestjs/cache-manager';
 import { UserModule } from './modules/user/user.module';
 import { AuthModule } from './auth/auth.module';
 import { PrismaModule } from './common/prisma/prisma.module';
@@ -7,6 +8,7 @@ import { BcryptModule } from './common/bcrypt/bcrypt.module';
 import { ConfigModule } from '@nestjs/config';
 import envConfig from './common/config/env-config';
 import { ScyfallModule } from './gateways/scyfall.module';
+import * as redisStore from 'cache-manager-redis-store';
 import { CardsModule } from './modules/cards/cards.module';
 import { DecksModule } from './modules/deck/cards.module';
 import { CardDeckModule } from './modules/card-deck/card-deck.module';
@@ -22,6 +24,15 @@ import { CardDeckModule } from './modules/card-deck/card-deck.module';
     CardDeckModule,
     ScyfallModule,
     ConfigModule.forRoot({ load: [envConfig], isGlobal: true }),
+    CacheModule.registerAsync({
+      useFactory: () => ({
+        store: redisStore,
+        socket: {
+          host: 'localhost',
+          port: 6379,
+        },
+      }),
+    }),
   ],
   controllers: [AppController],
 })
