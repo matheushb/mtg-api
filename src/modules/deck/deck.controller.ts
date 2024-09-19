@@ -10,14 +10,28 @@ import {
   Post,
   UseGuards,
 } from '@nestjs/common';
+import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
+import { Role } from '@prisma/client';
+import { NoRoles } from 'src/auth/decorators/no-roles.decorator';
+import { Roles } from 'src/auth/decorators/roles.decorator';
+import {
+  RequestUser,
+  UserFromRequest,
+} from 'src/auth/decorators/user-from-request.decorator';
+import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
+import { RolesGuard } from 'src/auth/guards/role.guard';
+import { DecksService } from './deck.service';
 import { CreateDeckDto } from './dtos/create-deck.dto';
 import { UpdateDeckDto } from './dtos/update-deck.dto';
-import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
-import { DecksService } from './deck.service';
-import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
+import {
+  DeckFilter,
+  DeckFilterParams,
+  HasFilterQueryDeck,
+} from 'src/common/filters/deck-filter.params';
 
 @ApiBearerAuth()
-@UseGuards(JwtAuthGuard)
+@UseGuards(JwtAuthGuard, RolesGuard)
+@Roles(Role.ADMIN)
 @ApiTags('decks')
 @Controller('decks')
 export class DecksController {
@@ -29,8 +43,9 @@ export class DecksController {
   }
 
   @Get()
-  async findAll() {
-    const decks = await this.decksService.findAll();
+  @HasFilterQueryDeck()
+  async findAll(@DeckFilter() deckFilter: DeckFilterParams) {
+    const decks = await this.decksService.findAll(deckFilter);
 
     return {
       data: decks,
@@ -40,7 +55,13 @@ export class DecksController {
     };
   }
 
-  @Get(':id')
+  @NoRoles()
+  @Get('me')
+  async findCurrentUserDeck(@UserFromRequest() user: RequestUser) {
+    return await this.decksService.findAll({ userId: user.id });
+  }
+
+  @Get('id/:id')
   async findOne(@Param('id') id: string) {
     const deck = await this.decksService.findOne(id);
     return {
@@ -48,7 +69,7 @@ export class DecksController {
     };
   }
 
-  @Patch(':id')
+  @Patch('id/:id')
   async update(@Param('id') id: string, @Body() updateDeckDto: UpdateDeckDto) {
     const updatedDeck = await this.decksService.update(id, updateDeckDto);
     return {
@@ -56,7 +77,7 @@ export class DecksController {
     };
   }
 
-  @Delete(':id')
+  @Delete('id/:id')
   @HttpCode(HttpStatus.NO_CONTENT)
   async delete(@Param('id') id: string) {
     await this.decksService.delete(id);
