@@ -1,14 +1,9 @@
 import { Injectable } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
-import { Role } from '@prisma/client';
 import { BcryptService } from 'src/common/bcrypt/bcrypt.service';
 import { UserService } from 'src/modules/user/user.service';
+import { RequestUser } from './decorators/user-from-request.decorator';
 
-export type UserFromRequest = {
-  email: string;
-  id: string;
-  role: Role;
-};
 @Injectable()
 export class AuthService {
   constructor(
@@ -27,7 +22,7 @@ export class AuthService {
     return null;
   }
 
-  async login(user: UserFromRequest) {
+  async login(user: RequestUser) {
     const payload = { email: user.email, sub: user.id, role: user.role };
     return {
       access_token: this.jwtService.sign(payload),

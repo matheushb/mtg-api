@@ -1,7 +1,7 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
 import axios, { AxiosInstance } from 'axios';
 import { writeFileSync } from 'fs';
-import { UserFromRequest } from 'src/auth/auth.service';
+import { RequestUser } from 'src/auth/decorators/user-from-request.decorator';
 import { CardDeckService } from 'src/modules/card-deck/card-deck.service';
 import { CardsService } from 'src/modules/cards/cards.service';
 import { DecksService } from 'src/modules/deck/deck.service';
@@ -20,7 +20,7 @@ export class ScyfallGateway {
     });
   }
 
-  async getLeader(user: UserFromRequest, deckName: string, color: string) {
+  async getLeader(user: RequestUser, deckName: string, color: string) {
     if (color && !/[WUBRG]/.test(color)) {
       throw new BadRequestException('Invalid color string, must be WUBRG');
     }
