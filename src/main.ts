@@ -8,6 +8,7 @@ async function bootstrap() {
 
   appConfig(app);
   swaggerConfig(app);
-  await app.listen(3000);
+
+  await app.listen(8000);
 }
 bootstrap();
