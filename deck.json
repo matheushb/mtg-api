@@ -1,0 +1,1706 @@
+[
+  {
+    "id": "396f9198-67b6-45d8-91b4-dc853bff9623",
+    "name": "Abdel Adrian, Gorion's Ward",
+    "released_date": "2022-06-10",
+    "mana_cost": "{4}{W}",
+    "type": "Legendary Creature — Human Warrior",
+    "text": "When Abdel Adrian, Gorion's Ward enters, exile any number of other nonland permanents you control until Abdel Adrian leaves the battlefield. Create a 1/1 white Soldier creature token for each permanent exiled this way.\nChoose a Background (You can have a Background as a second commander.)",
+    "colors": [
+      "W"
+    ],
+    "cmc": 5,
+    "keywords": [
+      "Choose a background"
+    ],
+    "rarity": "uncommon",
+    "price_in_usd": "0.10",
+    "type_line": "Legendary Creature — Human Warrior",
+    "foil_price_in_usd": "0.23",
+    "power": "4",
+    "toughness": "4"
+  },
+  {
+    "id": "e882c9f9-bf30-46b6-bedc-379d2c80e5cb",
+    "name": "+2 Mace",
+    "released_date": "2021-07-23T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Artifact — Equipment",
+    "text": "Equipped creature gets +2/+2.\nEquip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.)",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "COMMON",
+    "price_in_usd": 0.02,
+    "foil_price_in_usd": 0.09
+  },
+  {
+    "id": "0321b706-87b0-4bea-89d3-ec2e7252dc7c",
+    "name": "A-Ancestral Katana",
+    "released_date": "2022-02-18T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Artifact — Equipment",
+    "text": "Whenever a Samurai or Warrior you control attacks alone, you may pay {1}. When you do, attach Ancestral Katana to it.\nEquipped creature gets +2/+2 and has \"This creature has first strike as long as it's attacking.\"\nEquip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "COMMON",
+    "price_in_usd": 0,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "8d80663b-ea3f-4f7a-bff1-8fde04c05bce",
+    "name": "Abbey Gargoyles",
+    "released_date": "2008-09-22T00:00:00.000Z",
+    "mana_cost": "{2}{W}{W}{W}",
+    "type": "Creature — Gargoyle",
+    "text": "Flying, protection from red",
+    "power": 3,
+    "toughness": 4,
+    "colors": [
+      "W"
+    ],
+    "cmc": 5,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "bf87803b-e7c6-4122-add4-72e596167b7e",
+    "name": "Abbey Griffin",
+    "released_date": "2011-09-30T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Creature — Griffin",
+    "text": "Flying, vigilance",
+    "power": 2,
+    "toughness": 2,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "COMMON",
+    "price_in_usd": 0.08,
+    "foil_price_in_usd": 0.29
+  },
+  {
+    "id": "158caa84-da2e-4c4c-b24d-0c035c900e20",
+    "name": "Abbey Matron",
+    "released_date": "1995-10-01T00:00:00.000Z",
+    "mana_cost": "{2}{W}",
+    "type": "Creature — Human Cleric",
+    "text": "{W}, {T}: Abbey Matron gets +0/+3 until end of turn.",
+    "power": 1,
+    "toughness": 3,
+    "colors": [
+      "W"
+    ],
+    "cmc": 3,
+    "rarity": "COMMON",
+    "price_in_usd": 0.08,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "125a355d-bfcf-4125-aa6c-35e7dea6f63e",
+    "name": "Abeyance",
+    "released_date": "1997-06-09T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Instant",
+    "text": "Until end of turn, target player can't cast instant or sorcery spells, and that player can't activate abilities that aren't mana abilities.\nDraw a card.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "RARE",
+    "price_in_usd": 10.19,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "db113c47-c403-4c7f-9fa9-212c977df8d1",
+    "name": "Abiding Grace",
+    "released_date": "2021-06-18T00:00:00.000Z",
+    "mana_cost": "{2}{W}",
+    "type": "Enchantment",
+    "text": "At the beginning of your end step, choose one —\n• You gain 1 life.\n• Return target creature card with mana value 1 from your graveyard to the battlefield.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 3,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.15,
+    "foil_price_in_usd": 0.41
+  },
+  {
+    "id": "842e7e6a-c89a-463d-a6e8-743a953c827c",
+    "name": "Abolish",
+    "released_date": "2010-09-03T00:00:00.000Z",
+    "mana_cost": "{1}{W}{W}",
+    "type": "Instant",
+    "text": "You may discard a Plains card rather than pay this spell's mana cost.\nDestroy target artifact or enchantment.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 3,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.4,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "fe7d1839-7180-4b4c-8ddb-7df24573f740",
+    "name": "Absolute Grace",
+    "released_date": "1998-10-12T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Enchantment",
+    "text": "All creatures have protection from black.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.37,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "59d1f05b-f165-47c7-8a78-3b60ee3298ca",
+    "name": "Absolute Law",
+    "released_date": "1998-10-12T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Enchantment",
+    "text": "All creatures have protection from red.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.52,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "711979c3-e70b-4973-a4f1-020db534fc73",
+    "name": "Absolver Thrull",
+    "released_date": "2006-02-03T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Creature — Thrull Cleric",
+    "text": "Haunt (When this creature dies, exile it haunting target creature.)\nWhen Absolver Thrull enters or the creature it haunts dies, destroy target enchantment.",
+    "power": 2,
+    "toughness": 3,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "COMMON",
+    "price_in_usd": 0.06,
+    "foil_price_in_usd": 0.22
+  },
+  {
+    "id": "bd6e71a1-713e-4eca-bd65-9f0638c16794",
+    "name": "Absolving Lammasu",
+    "released_date": "2024-02-09T00:00:00.000Z",
+    "mana_cost": "{4}{W}",
+    "type": "Creature — Lammasu",
+    "text": "Flying\nWhen Absolving Lammasu enters, all suspected creatures are no longer suspected.\nWhen Absolving Lammasu dies, you gain 3 life and suspect up to one target creature an opponent controls. (A suspected creature has menace and can't block.)",
+    "power": 4,
+    "toughness": 3,
+    "colors": [
+      "W"
+    ],
+    "cmc": 5,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.08,
+    "foil_price_in_usd": 0.03
+  },
+  {
+    "id": "f93b725e-2b9c-4830-ac54-b2562afe09bb",
+    "name": "Abuelo's Awakening",
+    "released_date": "2023-11-17T00:00:00.000Z",
+    "mana_cost": "{X}{3}{W}",
+    "type": "Sorcery",
+    "text": "Return target artifact or non-Aura enchantment card from your graveyard to the battlefield with X additional +1/+1 counters on it. It's a 1/1 Spirit creature with flying in addition to its other types.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "RARE",
+    "price_in_usd": 0.11,
+    "foil_price_in_usd": 0.12
+  },
+  {
+    "id": "023b5e6f-10de-422d-8431-11f1fdeca246",
+    "name": "Abu Ja'far",
+    "released_date": "1995-07-01T00:00:00.000Z",
+    "mana_cost": "{W}",
+    "type": "Creature — Human",
+    "text": "When Abu Ja'far dies, destroy all creatures blocking or blocked by it. They can't be regenerated.",
+    "power": 0,
+    "toughness": 1,
+    "colors": [
+      "W"
+    ],
+    "cmc": 1,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.23,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "9e17bbf7-00c0-46f2-9718-2762fd7388d3",
+    "name": "Abuna Acolyte",
+    "released_date": "2010-10-01T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Creature — Cat Cleric",
+    "text": "{T}: Prevent the next 1 damage that would be dealt to any target this turn.\n{T}: Prevent the next 2 damage that would be dealt to target artifact creature this turn.",
+    "power": 1,
+    "toughness": 1,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.09,
+    "foil_price_in_usd": 0.2
+  },
+  {
+    "id": "b9e0bf63-0399-40d6-9162-4562d7bcdd0e",
+    "name": "Abuna's Chant",
+    "released_date": "2004-06-04T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Instant",
+    "text": "Choose one —\n• You gain 5 life.\n• Prevent the next 5 damage that would be dealt to target creature this turn.\nEntwine {2} (Choose both if you pay the entwine cost.)",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "COMMON",
+    "price_in_usd": 0.07,
+    "foil_price_in_usd": 0.28
+  },
+  {
+    "id": "b8c0cecd-c718-4238-9164-ebb6c20fc99c",
+    "name": "A-Buy Your Silence",
+    "released_date": "2022-04-29T00:00:00.000Z",
+    "mana_cost": "{4}{W}",
+    "type": "Instant",
+    "text": "Exile target nonland permanent. Its controller creates a Treasure token. (It's an artifact with \"{T}, Sacrifice this artifact: Add one mana of any color.\")",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 5,
+    "rarity": "COMMON",
+    "price_in_usd": 0,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "3ffd46f5-afd1-4130-b019-d8822e61fdfa",
+    "name": "Abzan Advantage",
+    "released_date": "2015-01-23T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Instant",
+    "text": "Target player sacrifices an enchantment. Bolster 1. (Choose a creature with the least toughness among creatures you control and put a +1/+1 counter on it.)",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "COMMON",
+    "price_in_usd": 0.04,
+    "foil_price_in_usd": 0.19
+  },
+  {
+    "id": "c0fb53e6-441f-4faa-bf0e-0847cf83279d",
+    "name": "Abzan Battle Priest",
+    "released_date": "2023-04-21T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Creature — Human Cleric",
+    "text": "Outlast {W} ({W}, {T}: Put a +1/+1 counter on this creature. Outlast only as a sorcery.)\nEach creature you control with a +1/+1 counter on it has lifelink.",
+    "power": 3,
+    "toughness": 2,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.11,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "f7e2b0e1-c9ea-4f91-b19e-73b1bd6a0884",
+    "name": "Abzan Falconer",
+    "released_date": "2023-04-21T00:00:00.000Z",
+    "mana_cost": "{2}{W}",
+    "type": "Creature — Human Soldier",
+    "text": "Outlast {W} ({W}, {T}: Put a +1/+1 counter on this creature. Outlast only as a sorcery.)\nEach creature you control with a +1/+1 counter on it has flying.",
+    "power": 2,
+    "toughness": 3,
+    "colors": [
+      "W"
+    ],
+    "cmc": 3,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.1,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "fe356261-3126-41f1-ae71-b69ca5641f84",
+    "name": "Abzan Runemark",
+    "released_date": "2015-01-23T00:00:00.000Z",
+    "mana_cost": "{2}{W}",
+    "type": "Enchantment — Aura",
+    "text": "Enchant creature\nEnchanted creature gets +2/+2.\nEnchanted creature has vigilance as long as you control a black or green permanent.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 3,
+    "rarity": "COMMON",
+    "price_in_usd": 0.04,
+    "foil_price_in_usd": 0.24
+  },
+  {
+    "id": "c4195373-e902-4fc3-aead-1f6e728dbbae",
+    "name": "Abzan Skycaptain",
+    "released_date": "2015-01-23T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Creature — Bird Soldier",
+    "text": "Flying\nWhen Abzan Skycaptain dies, bolster 2. (Choose a creature with the least toughness among creatures you control and put two +1/+1 counters on it.)",
+    "power": 2,
+    "toughness": 2,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "COMMON",
+    "price_in_usd": 0.03,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "05521edf-f47f-4e7a-aec5-cdc4ae7368c2",
+    "name": "Academic Probation",
+    "released_date": "2021-04-23T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Sorcery — Lesson",
+    "text": "Choose one —\n• Choose a nonland card name. Opponents can't cast spells with the chosen name until your next turn.\n• Choose target nonland permanent. Until your next turn, it can't attack or block, and its activated abilities can't be activated.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "RARE",
+    "price_in_usd": 0.06,
+    "foil_price_in_usd": 0.14
+  },
+  {
+    "id": "4367bc78-0912-4abd-8edd-bc792558d01a",
+    "name": "Academy Rector",
+    "released_date": "1999-06-07T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Creature — Human Cleric",
+    "text": "When Academy Rector dies, you may exile it. If you do, search your library for an enchantment card, put that card onto the battlefield, then shuffle.",
+    "power": 1,
+    "toughness": 2,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "RARE",
+    "price_in_usd": 52.6,
+    "foil_price_in_usd": 549.99
+  },
+  {
+    "id": "a508ffbe-aa58-4dae-b366-fea688b60755",
+    "name": "Acclaimed Contender",
+    "released_date": "2023-04-21T00:00:00.000Z",
+    "mana_cost": "{2}{W}",
+    "type": "Creature — Human Knight",
+    "text": "When Acclaimed Contender enters, if you control another Knight, look at the top five cards of your library. You may reveal a Knight, Aura, Equipment, or legendary artifact card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.",
+    "power": 3,
+    "toughness": 3,
+    "colors": [
+      "W"
+    ],
+    "cmc": 3,
+    "rarity": "RARE",
+    "price_in_usd": 0.12,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "df0a4370-729d-40e7-b68b-21902648492d",
+    "name": "Accorder Paladin",
+    "released_date": "2011-02-04T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Creature — Human Knight",
+    "text": "Battle cry (Whenever this creature attacks, each other attacking creature gets +1/+0 until end of turn.)",
+    "power": 3,
+    "toughness": 1,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.15,
+    "foil_price_in_usd": 1.84
+  },
+  {
+    "id": "6d9428ae-9c59-4cac-a29b-039a34cfdb6d",
+    "name": "A-Celebrity Fencer",
+    "released_date": "2022-04-29T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Creature — Elf Druid",
+    "text": "Alliance — Whenever another creature enters under your control, put a +1/+1 counter on Celebrity Fencer.",
+    "power": 3,
+    "toughness": 3,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "COMMON",
+    "price_in_usd": 0,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "735b16a4-c35a-4eec-94ed-8df6720240e0",
+    "name": "A-Cloister Gargoyle",
+    "released_date": "2021-07-23T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Artifact Creature — Gargoyle",
+    "text": "When Cloister Gargoyle enters, venture into the dungeon. (Enter the first room or advance to the next room.)\nAs long as you've completed a dungeon, Cloister Gargoyle gets +3/+0 and has flying.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "cd8980af-c3fa-4027-917a-4a3d441c0a75",
+    "name": "Acolyte's Reward",
+    "released_date": "2014-02-07T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Instant",
+    "text": "Prevent the next X damage that would be dealt to target creature this turn, where X is your devotion to white. If damage is prevented this way, Acolyte's Reward deals that much damage to any target. (Each {W} in the mana costs of permanents you control counts toward your devotion to white.)",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.11,
+    "foil_price_in_usd": 0.49
+  },
+  {
+    "id": "6f1a7590-3eee-4803-b192-d4fb771e6a86",
+    "name": "Acrobatic Cheerleader",
+    "released_date": "2024-09-27T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Creature — Human Survivor",
+    "text": "Survival — At the beginning of your second main phase, if Acrobatic Cheerleader is tapped, put a flying counter on it. This ability triggers only once.",
+    "power": 2,
+    "toughness": 2,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "COMMON",
+    "price_in_usd": 0.11,
+    "foil_price_in_usd": 0.08
+  },
+  {
+    "id": "47f82d84-03ad-42dd-80ce-f0ac5e353e46",
+    "name": "Acrobatic Leap",
+    "released_date": "2023-11-17T00:00:00.000Z",
+    "mana_cost": "{W}",
+    "type": "Instant",
+    "text": "Target creature gets +1/+3 and gains flying until end of turn. Untap it.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 1,
+    "rarity": "COMMON",
+    "price_in_usd": 0.03,
+    "foil_price_in_usd": 0.1
+  },
+  {
+    "id": "74f92174-f38f-4623-a5f7-f5be7f7dcc9d",
+    "name": "Acrobatic Maneuver",
+    "released_date": "2016-09-30T00:00:00.000Z",
+    "mana_cost": "{2}{W}",
+    "type": "Instant",
+    "text": "Exile target creature you control, then return that card to the battlefield under its owner's control.\nDraw a card.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 3,
+    "rarity": "COMMON",
+    "price_in_usd": 0.14,
+    "foil_price_in_usd": 1.29
+  },
+  {
+    "id": "e107bd35-eddd-40f7-aea8-3a1eec3363c0",
+    "name": "Act of Authority",
+    "released_date": "2013-11-01T00:00:00.000Z",
+    "mana_cost": "{1}{W}{W}",
+    "type": "Enchantment",
+    "text": "When Act of Authority enters, you may exile target artifact or enchantment.\nAt the beginning of your upkeep, you may exile target artifact or enchantment. If you do, its controller gains control of Act of Authority.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 3,
+    "rarity": "RARE",
+    "price_in_usd": 0.89,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "969860ba-6923-4715-b065-81803bba3dd6",
+    "name": "Act of Heroism",
+    "released_date": "2018-03-16T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Instant",
+    "text": "Untap target creature. It gets +2/+2 until end of turn and can block an additional creature this turn.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "COMMON",
+    "price_in_usd": 0.03,
+    "foil_price_in_usd": 0.14
+  },
+  {
+    "id": "bd091f3e-5fcc-4d12-b0c3-3b6340ab01d8",
+    "name": "Adamant Will",
+    "released_date": "2021-11-19T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Instant",
+    "text": "Target creature gets +2/+2 and gains indestructible until end of turn. (Damage and effects that say \"destroy\" don't destroy it.)",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "COMMON",
+    "price_in_usd": 0.02,
+    "foil_price_in_usd": 0.06
+  },
+  {
+    "id": "21c950d7-b4f6-4902-8c9a-98f2933f9fa5",
+    "name": "Adanto Vanguard",
+    "released_date": "2017-09-29T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Creature — Vampire Soldier",
+    "text": "As long as Adanto Vanguard is attacking, it gets +2/+0.\nPay 4 life: Adanto Vanguard gains indestructible until end of turn. (Damage and effects that say \"destroy\" don't destroy it.)",
+    "power": 1,
+    "toughness": 1,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.09,
+    "foil_price_in_usd": 1.81
+  },
+  {
+    "id": "83c91e24-b7e8-4040-80cb-d1b375002c10",
+    "name": "Adaptive Gemguard",
+    "released_date": "2023-11-17T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Artifact Creature — Gnome",
+    "text": "Tap two untapped artifacts and/or creatures you control: Put a +1/+1 counter on Adaptive Gemguard. Activate only as a sorcery.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "COMMON",
+    "price_in_usd": 0.02,
+    "foil_price_in_usd": 0.03
+  },
+  {
+    "id": "0ba7526f-dba8-4483-b925-946164fc0ae9",
+    "name": "Adarkar Unicorn",
+    "released_date": "1995-06-03T00:00:00.000Z",
+    "mana_cost": "{1}{W}{W}",
+    "type": "Creature — Unicorn",
+    "text": "{T}: Add {U} or {C}{U}. Spend this mana only to pay cumulative upkeep costs.",
+    "power": 2,
+    "toughness": 2,
+    "colors": [
+      "W"
+    ],
+    "cmc": 3,
+    "rarity": "COMMON",
+    "price_in_usd": 0.12,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "fc2a4abc-85da-46a6-a616-9aa607ce7372",
+    "name": "Adarkar Valkyrie",
+    "released_date": "2018-08-09T00:00:00.000Z",
+    "mana_cost": "{4}{W}{W}",
+    "type": "Snow Creature — Angel",
+    "text": "Flying, vigilance\n{T}: When target creature other than Adarkar Valkyrie dies this turn, return that card to the battlefield under your control.",
+    "power": 4,
+    "toughness": 5,
+    "colors": [
+      "W"
+    ],
+    "cmc": 6,
+    "rarity": "RARE",
+    "price_in_usd": 0.89,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "af2fecd0-cb15-42d5-b652-5721bec421b2",
+    "name": "A-Dawnbringer Cleric",
+    "released_date": "2021-07-23T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Creature — Human Cleric",
+    "text": "When Dawnbringer Cleric enters, choose one —\n• Cure Wounds — You gain 2 life.\n• Dispel Magic — Destroy target enchantment.\n• Gentle Repose — Exile target card from a graveyard.",
+    "power": 1,
+    "toughness": 4,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "COMMON",
+    "price_in_usd": 0,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "ce2bc7ad-458d-445e-a0a9-7897b596fdd0",
+    "name": "Adherent of Hope",
+    "released_date": "2020-07-03T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Creature — Human Soldier",
+    "text": "At the beginning of combat on your turn, if you control a Basri planeswalker, put a +1/+1 counter on Adherent of Hope.",
+    "power": 2,
+    "toughness": 1,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "COMMON",
+    "price_in_usd": 0.12,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "68f91092-b679-46c1-9f0c-3b286ee1d02f",
+    "name": "Adipose Offspring",
+    "released_date": "2023-10-13T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Creature — Alien",
+    "text": "Emerge {5}{W} (You may cast this spell by sacrificing a creature and paying the emerge cost reduced by that creature's mana value.)\nWhen Adipose Offspring enters, create a 2/2 white Alien creature token. If Adipose Offspring's emerge cost was paid, instead create X of those tokens, where X is the sacrificed creature's toughness.",
+    "power": 2,
+    "toughness": 2,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "RARE",
+    "price_in_usd": 0.14,
+    "foil_price_in_usd": 0.24
+  },
+  {
+    "id": "a6e7713d-6054-46a7-a8bc-f09e7a81a571",
+    "name": "Admonition Angel",
+    "released_date": "2020-09-25T00:00:00.000Z",
+    "mana_cost": "{3}{W}{W}{W}",
+    "type": "Creature — Angel",
+    "text": "Flying\nLandfall — Whenever a land you control enters, you may exile target nonland permanent other than Admonition Angel.\nWhen Admonition Angel leaves the battlefield, return all cards exiled with it to the battlefield under their owners' control.",
+    "power": 6,
+    "toughness": 6,
+    "colors": [
+      "W"
+    ],
+    "cmc": 6,
+    "rarity": "MYTHIC",
+    "price_in_usd": 0.7,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "d25ff6aa-a01d-49f2-926f-8f5457143b5c",
+    "name": "Adorable Kitten",
+    "released_date": "2020-02-29T00:00:00.000Z",
+    "mana_cost": "{W}",
+    "type": "Host Creature — Cat",
+    "text": "When this creature enters, roll a six-sided die. You gain life equal to the result.",
+    "power": 1,
+    "toughness": 1,
+    "colors": [
+      "W"
+    ],
+    "cmc": 1,
+    "rarity": "COMMON",
+    "price_in_usd": 0.17,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "865e267d-450c-4eeb-b61d-bd0ec5d8534a",
+    "name": "Adorned Pouncer",
+    "released_date": "2017-07-14T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Creature — Cat",
+    "text": "Double strike\nEternalize {3}{W}{W} ({3}{W}{W}, Exile this card from your graveyard: Create a token that's a copy of it, except it's a 4/4 black Zombie Cat with no mana cost. Eternalize only as a sorcery.)",
+    "power": 1,
+    "toughness": 1,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "RARE",
+    "price_in_usd": 0.41,
+    "foil_price_in_usd": 1.53
+  },
+  {
+    "id": "27b19a46-f4e9-4a08-b118-a62a93901c1e",
+    "name": "A-Dueling Coach",
+    "released_date": "2021-04-23T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Creature — Human Monk",
+    "text": "When Dueling Coach enters, distribute two +1/+1 counters among one or two target creatures you control.\n{W}, {T}: Put a +1/+1 counter on each creature you control with a +1/+1 counter on it.",
+    "power": 2,
+    "toughness": 2,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "81ce7e1e-ffe5-4ced-8967-9a6917245240",
+    "name": "Advance Scout",
+    "released_date": "1997-10-14T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Creature — Human Soldier Scout",
+    "text": "First strike\n{W}: Target creature gains first strike until end of turn.",
+    "power": 1,
+    "toughness": 1,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "COMMON",
+    "price_in_usd": 0.13,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "191a73b3-9efc-4f79-bf10-e8e2d6951c6c",
+    "name": "A-Dwarfhold Champion",
+    "released_date": "2021-07-23T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Creature — Dwarf Warrior",
+    "text": "Ward {1}\nAs long as Dwarfhold Champion is equipped, it gets +0/+2.",
+    "power": 3,
+    "toughness": 1,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "COMMON",
+    "price_in_usd": 0,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "3d27e65f-6d55-420e-a843-16097b50f7a2",
+    "name": "Aegis Angel",
+    "released_date": "2017-06-16T00:00:00.000Z",
+    "mana_cost": "{4}{W}{W}",
+    "type": "Creature — Angel",
+    "text": "Flying (This creature can't be blocked except by creatures with flying or reach.)\nWhen Aegis Angel enters, another target permanent gains indestructible for as long as you control Aegis Angel. (Effects that say \"destroy\" don't destroy it. A creature with indestructible can't be destroyed by damage.)",
+    "power": 5,
+    "toughness": 5,
+    "colors": [
+      "W"
+    ],
+    "cmc": 6,
+    "rarity": "RARE",
+    "price_in_usd": 0.46,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "9561ffdb-f4dd-4b62-a2c2-933498e3a061",
+    "name": "Aegis of Honor",
+    "released_date": "2001-10-01T00:00:00.000Z",
+    "mana_cost": "{W}",
+    "type": "Enchantment",
+    "text": "{1}: The next time an instant or sorcery spell would deal damage to you this turn, that spell deals that damage to its controller instead.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 1,
+    "rarity": "RARE",
+    "price_in_usd": 1.68,
+    "foil_price_in_usd": 10.4
+  },
+  {
+    "id": "f2b2f381-86a2-42ac-b694-dcde437d574f",
+    "name": "Aegis of the Gods",
+    "released_date": "2014-05-02T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Enchantment Creature — Human Soldier",
+    "text": "You have hexproof. (You can't be the target of spells or abilities your opponents control.)",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "RARE",
+    "price_in_usd": 1.04,
+    "foil_price_in_usd": 6.06
+  },
+  {
+    "id": "a94f356d-4714-4500-8fb0-1ac68ec5c1cf",
+    "name": "Aegis of the Heavens",
+    "released_date": "2020-07-17T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Instant",
+    "text": "Target creature gets +1/+7 until end of turn.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.14,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "e2a8f60f-7cca-4528-b153-a8804e93626e",
+    "name": "A-Eiganjo Exemplar",
+    "released_date": "2022-02-18T00:00:00.000Z",
+    "mana_cost": "{W}",
+    "type": "Enchantment Creature — Human Samurai",
+    "text": "Whenever a Samurai or Warrior you control attacks alone, it gets +1/+1 until end of turn.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 1,
+    "rarity": "COMMON",
+    "price_in_usd": 0,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "58e84a4a-034f-4f55-a827-e62f2b61f091",
+    "name": "Aerial Assault",
+    "released_date": "2020-07-17T00:00:00.000Z",
+    "mana_cost": "{2}{W}",
+    "type": "Sorcery",
+    "text": "Destroy target tapped creature. You gain 1 life for each creature you control with flying.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 3,
+    "rarity": "COMMON",
+    "price_in_usd": 0.07,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "f7017afb-4c7c-4c8d-9c9d-3f056a55561e",
+    "name": "Aerial Boost",
+    "released_date": "2023-04-21T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Instant",
+    "text": "Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)\nTarget creature gets +2/+2 and gains flying until end of turn.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "COMMON",
+    "price_in_usd": 0.03,
+    "foil_price_in_usd": 0.02
+  },
+  {
+    "id": "1a2f4abd-089e-4015-a207-8a62616668b1",
+    "name": "Aerialephant",
+    "released_date": "2022-10-07T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Creature — Elephant Performer",
+    "text": "Flying\nWhen Aerialephant enters, you get {TK}, then you may put a sticker on a nonland permanent you own.",
+    "power": 3,
+    "toughness": 2,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "COMMON",
+    "price_in_usd": 0.02,
+    "foil_price_in_usd": 0.05
+  },
+  {
+    "id": "5353bcb9-800d-4d74-95fa-42350a0f25de",
+    "name": "Aerial Extortionist",
+    "released_date": "2024-02-09T00:00:00.000Z",
+    "mana_cost": "{3}{W}{W}",
+    "type": "Creature — Bird Soldier",
+    "text": "Flying\nWhenever Aerial Extortionist enters or deals combat damage to a player, exile up to one target nonland permanent. For as long as that card remains exiled, its owner may cast it.\nWhenever another player casts a spell from anywhere other than their hand, draw a card.",
+    "power": 4,
+    "toughness": 3,
+    "colors": [
+      "W"
+    ],
+    "cmc": 5,
+    "rarity": "RARE",
+    "price_in_usd": 0.29,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "c63e9c49-3fa4-41ad-9eed-19801df103c6",
+    "name": "Aerial Maneuver",
+    "released_date": "2013-02-01T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Instant",
+    "text": "Target creature gets +1/+1 and gains flying and first strike until end of turn.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "COMMON",
+    "price_in_usd": 0.06,
+    "foil_price_in_usd": 0.14
+  },
+  {
+    "id": "b89cab47-25fb-49ea-bb43-90a0089b6b20",
+    "name": "Aerial Modification",
+    "released_date": "2017-01-20T00:00:00.000Z",
+    "mana_cost": "{4}{W}",
+    "type": "Enchantment — Aura",
+    "text": "Enchant creature or Vehicle\nAs long as enchanted permanent is a Vehicle, it's a creature in addition to its other types.\nEnchanted creature gets +2/+2 and has flying.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 5,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.03,
+    "foil_price_in_usd": 0.45
+  },
+  {
+    "id": "8833065e-5022-4f48-b2fd-6fe5647c0a07",
+    "name": "Aerial Responder",
+    "released_date": "2020-04-17T00:00:00.000Z",
+    "mana_cost": "{1}{W}{W}",
+    "type": "Creature — Dwarf Soldier",
+    "text": "Flying, vigilance, lifelink",
+    "power": 2,
+    "toughness": 3,
+    "colors": [
+      "W"
+    ],
+    "cmc": 3,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.11,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "7c474f31-336d-44df-a7da-27aefd220e22",
+    "name": "Aerial Surveyor",
+    "released_date": "2022-02-18T00:00:00.000Z",
+    "mana_cost": "{2}{W}",
+    "type": "Artifact — Vehicle",
+    "text": "Flying\nWhenever Aerial Surveyor attacks, if defending player controls more lands than you, search your library for a basic Plains card, put it onto the battlefield tapped, then shuffle.\nCrew 2",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 3,
+    "rarity": "RARE",
+    "price_in_usd": 0.16,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "b7290b56-22c2-4905-8add-0550a12db082",
+    "name": "Aerial Toastmaster",
+    "released_date": "2017-12-08T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Artifact Creature — Cyborg Rigger",
+    "text": "Flying\n{3}{W}, Sacrifice another artifact: Aerial Toastmaster assembles a Contraption. (Put the top card of your Contraption deck face up onto one of your sprockets.)",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.12,
+    "foil_price_in_usd": 0.45
+  },
+  {
+    "id": "5e4c134b-a416-467e-a158-def84c92c6af",
+    "name": "Aerie Auxiliary",
+    "released_date": "2024-06-14T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Creature — Bird Soldier",
+    "text": "Flying\nWhen Aerie Auxiliary enters, support 2. (Put a +1/+1 counter on each of up to two other target creatures.)",
+    "power": 3,
+    "toughness": 3,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "COMMON",
+    "price_in_usd": 0.04,
+    "foil_price_in_usd": 0.03
+  },
+  {
+    "id": "ac774ed1-75f0-4c22-adf7-73a64183981a",
+    "name": "Aerie Mystics",
+    "released_date": "2017-06-09T00:00:00.000Z",
+    "mana_cost": "{4}{W}",
+    "type": "Creature — Bird Wizard",
+    "text": "Flying\n{1}{G}{U}: Creatures you control gain shroud until end of turn. (They can't be the targets of spells or abilities.)",
+    "power": 3,
+    "toughness": 3,
+    "colors": [
+      "W"
+    ],
+    "cmc": 5,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.12,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "943f7244-aa62-423f-aaaa-680bdfb4f47e",
+    "name": "Aeronaut Admiral",
+    "released_date": "2022-02-18T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Creature — Human Pilot",
+    "text": "Flying\nVehicles you control have flying.",
+    "power": 3,
+    "toughness": 1,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.08,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "38a62bb2-bc33-44d4-9a7e-92c9ea7d3c2c",
+    "name": "Aeronaut Cavalry",
+    "released_date": "2022-11-18T00:00:00.000Z",
+    "mana_cost": "{4}{W}",
+    "type": "Creature — Human Soldier",
+    "text": "Flying\nWhen Aeronaut Cavalry enters, put a +1/+1 counter on another target Soldier you control.",
+    "power": 3,
+    "toughness": 4,
+    "colors": [
+      "W"
+    ],
+    "cmc": 5,
+    "rarity": "COMMON",
+    "price_in_usd": 0.03,
+    "foil_price_in_usd": 0.06
+  },
+  {
+    "id": "80bb3abd-ebaf-4dc2-97eb-ed4a2b005177",
+    "name": "Aethergeode Miner",
+    "released_date": "2017-01-20T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Creature — Dwarf Scout",
+    "text": "Whenever Aethergeode Miner attacks, you get {E}{E} (two energy counters).\nPay {E}{E}: Exile Aethergeode Miner, then return it to the battlefield under its owner's control.",
+    "power": 3,
+    "toughness": 1,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "RARE",
+    "price_in_usd": 0.22,
+    "foil_price_in_usd": 0.61
+  },
+  {
+    "id": "f5dcbe97-d582-464e-98e7-dd06d8652606",
+    "name": "Aether Inspector",
+    "released_date": "2017-01-20T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Creature — Dwarf Artificer",
+    "text": "Vigilance\nWhen Aether Inspector enters, you get {E}{E} (two energy counters).\nWhenever Aether Inspector attacks, you may pay {E}{E}. If you do, create a 1/1 colorless Servo artifact creature token.",
+    "power": 2,
+    "toughness": 3,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "COMMON",
+    "price_in_usd": 0.03,
+    "foil_price_in_usd": 0.23
+  },
+  {
+    "id": "226f7c45-db9f-4d48-b575-4d2f1904c963",
+    "name": "Aethershield Artificer",
+    "released_date": "2018-07-13T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Creature — Dwarf Artificer",
+    "text": "At the beginning of combat on your turn, target artifact creature you control gets +2/+2 and gains indestructible until end of turn. (Damage and effects that say \"destroy\" don't destroy it.)",
+    "power": 3,
+    "toughness": 3,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.09,
+    "foil_price_in_usd": 1.71
+  },
+  {
+    "id": "8214d2e9-5aa1-42a7-8f1a-f4eaa2def1b1",
+    "name": "Aether Shockwave",
+    "released_date": "2005-06-03T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Instant",
+    "text": "Choose one —\n• Tap all Spirits.\n• Tap all non-Spirit creatures.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 1.01,
+    "foil_price_in_usd": 7.48
+  },
+  {
+    "id": "79fb7541-7a27-40a5-aabd-fce26df03485",
+    "name": "Aetherstorm Roc",
+    "released_date": "2016-09-30T00:00:00.000Z",
+    "mana_cost": "{2}{W}{W}",
+    "type": "Creature — Bird",
+    "text": "Flying\nWhenever Aetherstorm Roc or another creature you control enters, you get {E} (an energy counter).\nWhenever Aetherstorm Roc attacks, you may pay {E}{E}. If you do, put a +1/+1 counter on it and tap up to one target creature defending player controls.",
+    "power": 3,
+    "toughness": 3,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "RARE",
+    "price_in_usd": 0.27,
+    "foil_price_in_usd": 0.69
+  },
+  {
+    "id": "f762546c-f5eb-420d-a8f7-c3566cd8f506",
+    "name": "Affa Guard Hound",
+    "released_date": "2020-07-17T00:00:00.000Z",
+    "mana_cost": "{2}{W}",
+    "type": "Creature — Dog",
+    "text": "Flash (You may cast this spell any time you could cast an instant.)\nWhen Affa Guard Hound enters, target creature gets +0/+3 until end of turn.",
+    "power": 2,
+    "toughness": 2,
+    "colors": [
+      "W"
+    ],
+    "cmc": 3,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.06,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "0e54ac79-fbaa-4385-869b-aaf31e33a11f",
+    "name": "Affa Protector",
+    "released_date": "2016-01-22T00:00:00.000Z",
+    "mana_cost": "{2}{W}",
+    "type": "Creature — Human Soldier Ally",
+    "text": "Vigilance",
+    "power": 1,
+    "toughness": 4,
+    "colors": [
+      "W"
+    ],
+    "cmc": 3,
+    "rarity": "COMMON",
+    "price_in_usd": 0.03,
+    "foil_price_in_usd": 0.17
+  },
+  {
+    "id": "258946f2-294a-4ddf-be91-9ff4c94e4bdb",
+    "name": "Afterlife",
+    "released_date": "2014-11-07T00:00:00.000Z",
+    "mana_cost": "{2}{W}",
+    "type": "Instant",
+    "text": "Destroy target creature. It can't be regenerated. Its controller creates a 1/1 white Spirit creature token with flying.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 3,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.18,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "3cd8dd4e-6892-49d7-8fae-97d04f9f6c84",
+    "name": "Against All Odds",
+    "released_date": "2023-02-03T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Sorcery",
+    "text": "Choose one or both —\n• Exile target artifact or creature you control, then return it to the battlefield under its owner's control.\n• Return target artifact or creature card with mana value 3 or less from your graveyard to the battlefield.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.06,
+    "foil_price_in_usd": 0.14
+  },
+  {
+    "id": "4a5ff6af-402f-4bf6-a75b-dc1e0e40aff6",
+    "name": "Ageless Guardian",
+    "released_date": "2021-04-23T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Creature — Spirit Soldier",
+    "text": "",
+    "power": 1,
+    "toughness": 4,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "COMMON",
+    "price_in_usd": 0.01,
+    "foil_price_in_usd": 0.03
+  },
+  {
+    "id": "ccaa4a19-8eba-4c43-8a9a-636e234df751",
+    "name": "Ageless Sentinels",
+    "released_date": "2003-05-26T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Creature — Wall",
+    "text": "Defender (This creature can't attack.)\nFlying\nWhen Ageless Sentinels blocks, it becomes a Bird Giant, and it loses defender. (It's no longer a Wall. This effect lasts indefinitely.)",
+    "power": 4,
+    "toughness": 4,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "RARE",
+    "price_in_usd": 0.37,
+    "foil_price_in_usd": 1.99
+  },
+  {
+    "id": "9cc2b6b4-399d-411a-a057-8dd1fff0d3b7",
+    "name": "A Good Day to Pie",
+    "released_date": "2022-10-07T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Instant",
+    "text": "Tap up to two target creatures.\nWhenever you put a name sticker on a creature, you may return A Good Day to Pie from your graveyard to your hand.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "COMMON",
+    "price_in_usd": 0.02,
+    "foil_price_in_usd": 0.02
+  },
+  {
+    "id": "23690b14-8e3e-4aff-bf5e-dd002dcc0bed",
+    "name": "A-Guide of Souls",
+    "released_date": "2024-08-06T00:00:00.000Z",
+    "mana_cost": "{W}",
+    "type": "Creature — Human Cleric",
+    "text": "Whenever another creature you control enters, you gain 1 life and get {E} (an energy counter).\nWhenever you attack, you may pay {E}{E}{E}{E}. When you do, put two +1/+1 counters and a flying counter on target attacking creature. It becomes an Angel in addition to its other types.",
+    "power": 1,
+    "toughness": 2,
+    "colors": [
+      "W"
+    ],
+    "cmc": 1,
+    "rarity": "RARE",
+    "price_in_usd": 0,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "d6c23437-244f-4e6b-93b7-ce0321be154b",
+    "name": "A-Imperial Subduer",
+    "released_date": "2022-02-18T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Creature — Human Samurai",
+    "text": "Whenever a Samurai or Warrior you control attacks alone, tap target creature you don't control.",
+    "power": 3,
+    "toughness": 1,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "COMMON",
+    "price_in_usd": 0,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "6956c523-507c-4256-88b8-58a8a108c79f",
+    "name": "Ainok Bond-Kin",
+    "released_date": "2023-08-04T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Creature — Dog Soldier",
+    "text": "Outlast {1}{W} ({1}{W}, {T}: Put a +1/+1 counter on this creature. Outlast only as a sorcery.)\nEach creature you control with a +1/+1 counter on it has first strike.",
+    "power": 2,
+    "toughness": 1,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "COMMON",
+    "price_in_usd": 0.03,
+    "foil_price_in_usd": 0.06
+  },
+  {
+    "id": "49827a57-cf10-4a44-a1fd-ac611da39dc9",
+    "name": "Airdrop Aeronauts",
+    "released_date": "2017-01-20T00:00:00.000Z",
+    "mana_cost": "{3}{W}{W}",
+    "type": "Creature — Dwarf Scout",
+    "text": "Flying\nRevolt — When Airdrop Aeronauts enters, if a permanent you controlled left the battlefield this turn, you gain 5 life.",
+    "power": 4,
+    "toughness": 3,
+    "colors": [
+      "W"
+    ],
+    "cmc": 5,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.03,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "7ad55575-6053-43b1-9496-bcb1ea25e2a1",
+    "name": "Airlift Chaplain",
+    "released_date": "2022-11-18T00:00:00.000Z",
+    "mana_cost": "{2}{W}",
+    "type": "Creature — Human Cleric",
+    "text": "Flying\nWhen Airlift Chaplain enters, mill three cards. You may put a Plains card or a creature card with mana value 3 or less from among the cards milled this way into your hand. If you don't, put a +1/+1 counter on Airlift Chaplain. (To mill a card, put the top card of your library into your graveyard.)",
+    "power": 1,
+    "toughness": 1,
+    "colors": [
+      "W"
+    ],
+    "cmc": 3,
+    "rarity": "COMMON",
+    "price_in_usd": 0.04,
+    "foil_price_in_usd": 0.05
+  },
+  {
+    "id": "1d918133-d4e2-4674-a3cb-58edef1c6758",
+    "name": "Ajani Fells the Godsire",
+    "released_date": "2024-06-14T00:00:00.000Z",
+    "mana_cost": "{3}{W}{W}",
+    "type": "Enchantment — Saga",
+    "text": "(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)\nI — Exile target creature an opponent controls with power 3 or greater.\nII — Create a 2/1 white Cat Warrior creature token, then put a vigilance counter on a creature you control.\nIII — Target creature you control gains double strike until end of turn.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 5,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.04,
+    "foil_price_in_usd": 0.04
+  },
+  {
+    "id": "8ea009c1-505e-4307-b8f3-2d37e36507a6",
+    "name": "Ajani's Chosen",
+    "released_date": "2020-07-17T00:00:00.000Z",
+    "mana_cost": "{2}{W}{W}",
+    "type": "Creature — Cat Soldier",
+    "text": "Whenever an enchantment you control enters, create a 2/2 white Cat creature token. If that enchantment is an Aura, you may attach it to the token.",
+    "power": 3,
+    "toughness": 3,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "RARE",
+    "price_in_usd": 0.24,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "d38ad178-35a5-44ad-b80a-d746f3e6a45c",
+    "name": "Ajani's Influence",
+    "released_date": "2018-07-13T00:00:00.000Z",
+    "mana_cost": "{2}{W}{W}",
+    "type": "Sorcery",
+    "text": "Put two +1/+1 counters on target creature.\nLook at the top five cards of your library. You may reveal a white card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "RARE",
+    "price_in_usd": 0.25,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "1aebbb57-31b3-4289-815e-4f529e29f3ea",
+    "name": "Ajani's Last Stand",
+    "released_date": "2018-07-13T00:00:00.000Z",
+    "mana_cost": "{2}{W}{W}",
+    "type": "Enchantment",
+    "text": "Whenever a creature or planeswalker you control dies, you may sacrifice Ajani's Last Stand. If you do, create a 4/4 white Avatar creature token with flying.\nWhen a spell or ability an opponent controls causes you to discard this card, if you control a Plains, create a 4/4 white Avatar creature token with flying.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "RARE",
+    "price_in_usd": 0.18,
+    "foil_price_in_usd": 0.25
+  },
+  {
+    "id": "de4da30d-5c72-4323-b305-7277038b4a05",
+    "name": "Ajani's Mantra",
+    "released_date": "2011-09-02T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Enchantment",
+    "text": "At the beginning of your upkeep, you may gain 1 life.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "COMMON",
+    "price_in_usd": 0.34,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "e77e2fd5-5c46-4f6b-ac43-ec23fab57a1a",
+    "name": "Ajani's Presence",
+    "released_date": "2014-05-02T00:00:00.000Z",
+    "mana_cost": "{W}",
+    "type": "Instant",
+    "text": "Strive — This spell costs {2}{W} more to cast for each target beyond the first.\nAny number of target creatures each get +1/+1 and gain indestructible until end of turn. (Damage and effects that say \"destroy\" don't destroy them.)",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 1,
+    "rarity": "COMMON",
+    "price_in_usd": 0.09,
+    "foil_price_in_usd": 1.06
+  },
+  {
+    "id": "1796b260-7053-4d68-9918-c7392e312d10",
+    "name": "Ajani's Pridemate",
+    "released_date": "2024-02-23T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Creature — Cat Soldier",
+    "text": "Whenever you gain life, put a +1/+1 counter on Ajani's Pridemate.",
+    "power": 2,
+    "toughness": 2,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.19,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "373d6799-e031-4043-8437-ed4880be0de9",
+    "name": "Ajani's Sunstriker",
+    "released_date": "2014-06-06T00:00:00.000Z",
+    "mana_cost": "{W}{W}",
+    "type": "Creature — Cat Cleric",
+    "text": "Lifelink (Damage dealt by this creature also causes you to gain that much life.)",
+    "power": 2,
+    "toughness": 2,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "COMMON",
+    "price_in_usd": 0.17,
+    "foil_price_in_usd": 0.32
+  },
+  {
+    "id": "c9045fcb-b633-4c35-8058-6234311551ae",
+    "name": "Ajani's Welcome",
+    "released_date": "2018-07-13T00:00:00.000Z",
+    "mana_cost": "{W}",
+    "type": "Enchantment",
+    "text": "Whenever a creature you control enters, you gain 1 life.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 1,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 2.88,
+    "foil_price_in_usd": 6.11
+  },
+  {
+    "id": "63313cf3-963d-4bae-89bc-8a8ddf2a9294",
+    "name": "A-Knockout Blow",
+    "released_date": "2022-04-29T00:00:00.000Z",
+    "mana_cost": "{2}{W}",
+    "type": "Instant",
+    "text": "This spell costs {2} less to cast if it targets a red creature.\nDestroy target tapped creature. You gain 2 life.",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 3,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0,
+    "foil_price_in_usd": 0
+  },
+  {
+    "id": "59fdc045-b938-4321-aec3-51685cbbaa52",
+    "name": "Akrasan Squire",
+    "released_date": "2008-10-03T00:00:00.000Z",
+    "mana_cost": "{W}",
+    "type": "Creature — Human Soldier",
+    "text": "Exalted (Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)",
+    "power": 1,
+    "toughness": 1,
+    "colors": [
+      "W"
+    ],
+    "cmc": 1,
+    "rarity": "COMMON",
+    "price_in_usd": 0.16,
+    "foil_price_in_usd": 0.9
+  },
+  {
+    "id": "8d96bc2b-2e31-4654-b192-c3f023d9fde6",
+    "name": "Akroan Jailer",
+    "released_date": "2015-07-17T00:00:00.000Z",
+    "mana_cost": "{W}",
+    "type": "Creature — Human Soldier",
+    "text": "{2}{W}, {T}: Tap target creature.",
+    "power": 1,
+    "toughness": 1,
+    "colors": [
+      "W"
+    ],
+    "cmc": 1,
+    "rarity": "COMMON",
+    "price_in_usd": 0.05,
+    "foil_price_in_usd": 0.15
+  },
+  {
+    "id": "7e21938b-46b1-4b2f-8269-0cd0e998cddc",
+    "name": "Akroan Mastiff",
+    "released_date": "2014-05-02T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Creature — Dog",
+    "text": "{W}, {T}: Tap target creature.",
+    "power": 2,
+    "toughness": 2,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "COMMON",
+    "price_in_usd": 0.08,
+    "foil_price_in_usd": 0.32
+  },
+  {
+    "id": "fe23019a-e432-4a27-8acb-b17728a1e8b0",
+    "name": "Akroan Phalanx",
+    "released_date": "2014-02-07T00:00:00.000Z",
+    "mana_cost": "{3}{W}",
+    "type": "Creature — Human Soldier",
+    "text": "Vigilance\n{2}{R}: Creatures you control get +1/+0 until end of turn.",
+    "power": 3,
+    "toughness": 3,
+    "colors": [
+      "W"
+    ],
+    "cmc": 4,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0.06,
+    "foil_price_in_usd": 0.31
+  },
+  {
+    "id": "d55e85c3-234e-49c4-a307-96fb4497eea8",
+    "name": "Akroan Skyguard",
+    "released_date": "2014-02-07T00:00:00.000Z",
+    "mana_cost": "{1}{W}",
+    "type": "Creature — Human Soldier",
+    "text": "Flying\nHeroic — Whenever you cast a spell that targets Akroan Skyguard, put a +1/+1 counter on Akroan Skyguard.",
+    "power": 1,
+    "toughness": 1,
+    "colors": [
+      "W"
+    ],
+    "cmc": 2,
+    "rarity": "COMMON",
+    "price_in_usd": 0.1,
+    "foil_price_in_usd": 1.01
+  },
+  {
+    "id": "be43fdd6-917e-4a49-a9b8-d1673b421dce",
+    "name": "Akroma's Blessing",
+    "released_date": "2014-06-16T00:00:00.000Z",
+    "mana_cost": "{2}{W}",
+    "type": "Instant",
+    "text": "Choose a color. Creatures you control gain protection from the chosen color until end of turn.\nCycling {W} ({W}, Discard this card: Draw a card.)",
+    "power": null,
+    "toughness": null,
+    "colors": [
+      "W"
+    ],
+    "cmc": 3,
+    "rarity": "UNCOMMON",
+    "price_in_usd": 0,
+    "foil_price_in_usd": 0
+  }
+]
