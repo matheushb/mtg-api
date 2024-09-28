@@ -4,6 +4,7 @@ import { UserController } from '../user.controller';
 import { UserService } from '../user.service';
 import { CreateUserDto } from '../dtos/create-user.dto';
 import { UpdateUserDto } from '../dtos/update-user.dto';
+import { CacheModule } from '@nestjs/cache-manager';
 
 describe('UserController', () => {
   let controller: UserController;
@@ -11,6 +12,7 @@ describe('UserController', () => {
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
+      imports: [CacheModule.register()],
       controllers: [UserController],
       providers: [
         {
@@ -70,6 +72,7 @@ describe('UserController', () => {
         meta: {
           total: result.length,
         },
+        isCached: false,
       });
     });
   });

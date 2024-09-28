@@ -3,6 +3,7 @@ import { CardsController } from '../cards.controller';
 import { CardsService } from '../cards.service';
 import { CreateCardDto } from '../dtos/create-card.dto';
 import { UpdateCardDto } from '../dtos/update-card.dto';
+import { CacheModule } from '@nestjs/cache-manager';
 
 describe('CardsController', () => {
   let controller: CardsController;
@@ -10,6 +11,7 @@ describe('CardsController', () => {
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
+      imports: [CacheModule.register()],
       controllers: [CardsController],
       providers: [
         {
@@ -87,11 +89,12 @@ describe('CardsController', () => {
 
       jest.spyOn(service, 'findAll').mockResolvedValue(result as any);
 
-      expect(await controller.findAll()).toEqual({
+      expect(await controller.findAll({})).toEqual({
         data: result,
         meta: {
           total: result.length,
         },
+        isCached: false,
       });
     });
   });

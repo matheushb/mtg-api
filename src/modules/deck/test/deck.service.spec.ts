@@ -63,7 +63,7 @@ describe('DecksService', () => {
 
       jest.spyOn(decksRepository, 'findAll').mockResolvedValue(result as any);
 
-      expect(await service.findAll()).toEqual(result);
+      expect(await service.findAll({}, {})).toEqual(result);
     });
   });
 
@@ -107,7 +107,9 @@ describe('DecksService', () => {
     it('should delete a deck successfully', async () => {
       const id = '1';
 
-      jest.spyOn(decksRepository, 'delete').mockResolvedValue(undefined);
+      jest
+        .spyOn(decksRepository, 'delete')
+        .mockResolvedValue(undefined as never);
 
       await expect(service.delete(id)).resolves.toBeUndefined();
     });

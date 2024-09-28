@@ -3,6 +3,7 @@ import { CardDeckService } from '../card-deck.service';
 import { CardDeckRepository } from '../card-deck.repository';
 import { CreateCardDeckDto } from '../dtos/create-card-deck.dto';
 import { UpdateCardDeckDto } from '../dtos/update-card-deck.dto';
+import { CacheModule } from '@nestjs/cache-manager';
 
 describe('CardDeckService', () => {
   let service: CardDeckService;
@@ -10,6 +11,7 @@ describe('CardDeckService', () => {
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
+      imports: [CacheModule.register()],
       providers: [
         CardDeckService,
         {

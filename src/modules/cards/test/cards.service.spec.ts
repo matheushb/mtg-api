@@ -109,7 +109,7 @@ describe('CardsService', () => {
 
       jest.spyOn(cardsRepository, 'findAll').mockResolvedValue(result as any);
 
-      expect(await service.findAll()).toEqual(result);
+      expect(await service.findAll({})).toEqual(result);
     });
   });
 

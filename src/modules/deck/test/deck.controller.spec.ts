@@ -3,6 +3,7 @@ import { DecksController } from '../deck.controller';
 import { DecksService } from '../deck.service';
 import { CreateDeckDto } from '../dtos/create-deck.dto';
 import { UpdateDeckDto } from '../dtos/update-deck.dto';
+import { CacheModule } from '@nestjs/cache-manager';
 
 describe('DecksController', () => {
   let controller: DecksController;
@@ -10,6 +11,7 @@ describe('DecksController', () => {
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
+      imports: [CacheModule.register()],
       controllers: [DecksController],
       providers: [
         {
@@ -63,11 +65,12 @@ describe('DecksController', () => {
 
       jest.spyOn(service, 'findAll').mockResolvedValue(result as any);
 
-      expect(await controller.findAll({})).toEqual({
+      expect(await controller.findAll({}, {})).toEqual({
         data: result,
         meta: {
           total: result.length,
         },
+        isCached: false,
       });
     });
   });
