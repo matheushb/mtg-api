@@ -8,7 +8,7 @@ import { ApiQuery } from '@nestjs/swagger';
 export const allowedFilters = ['userId'];
 
 export type DeckFilterParams = {
-  userId: string;
+  userId?: string;
 };
 
 export const DeckFilter = createParamDecorator(
