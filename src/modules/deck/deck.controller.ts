@@ -5,6 +5,7 @@ import {
   Get,
   HttpCode,
   HttpStatus,
+  Inject,
   Param,
   Patch,
   Post,
@@ -23,11 +24,19 @@ import { RolesGuard } from 'src/auth/guards/role.guard';
 import { DecksService } from './deck.service';
 import { CreateDeckDto } from './dtos/create-deck.dto';
 import { UpdateDeckDto } from './dtos/update-deck.dto';
+
+import {
+  DeckSelect,
+  DeckSelectParams,
+  HasSelectQueryDeck,
+} from 'src/common/filters/deck/deck-select.params';
 import {
   DeckFilter,
   DeckFilterParams,
   HasFilterQueryDeck,
-} from 'src/common/filters/deck-filter.params';
+} from 'src/common/filters/deck/deck-filter.params';
+import { CACHE_MANAGER } from '@nestjs/cache-manager';
+import { Cache } from 'cache-manager';
 
 @ApiBearerAuth()
 @UseGuards(JwtAuthGuard, RolesGuard)
@@ -35,30 +44,93 @@ import {
 @ApiTags('decks')
 @Controller('decks')
 export class DecksController {
-  constructor(private readonly decksService: DecksService) {}
+  constructor(
+    private readonly decksService: DecksService,
+    @Inject(CACHE_MANAGER) private readonly cacheManager: Cache,
+  ) {}
 
   @Post()
   async create(@Body() createDeckDto: CreateDeckDto) {
     return await this.decksService.create(createDeckDto);
   }
 
-  @Get()
+  @Get('no-cache')
   @HasFilterQueryDeck()
-  async findAll(@DeckFilter() deckFilter: DeckFilterParams) {
-    const decks = await this.decksService.findAll(deckFilter);
+  @HasSelectQueryDeck()
+  async findAllWithoutCache(
+    @DeckFilter() deckFilter: DeckFilterParams,
+    @DeckSelect() deckSelect: DeckSelectParams,
+  ) {
+    const decks = await this.decksService.findAll(deckFilter, deckSelect);
 
-    return {
+    const response = {
       data: decks,
       meta: {
         total: decks.length,
       },
     };
+
+    return { ...response, isCached: false };
+  }
+  @Get()
+  @HasFilterQueryDeck()
+  @HasSelectQueryDeck()
+  async findAll(
+    @DeckFilter() deckFilter: DeckFilterParams,
+    @DeckSelect() deckSelect: DeckSelectParams,
+  ) {
+    const cacheKey = `deck_findAll`;
+
+    const cachedData: object = await this.cacheManager.get(cacheKey);
+    if (cachedData) {
+      return {
+        ...cachedData,
+        isCached: true,
+      };
+    }
+
+    const decks = await this.decksService.findAll(deckFilter, deckSelect);
+
+    const response = {
+      data: decks,
+      meta: {
+        total: decks.length,
+      },
+    };
+
+    await this.cacheManager.set(cacheKey, response, 6000);
+
+    return { ...response, isCached: false };
   }
 
   @NoRoles()
+  @HasSelectQueryDeck()
   @Get('me')
-  async findCurrentUserDeck(@UserFromRequest() user: RequestUser) {
-    return await this.decksService.findAll({ userId: user.id });
+  async findCurrentUserDeck(
+    @UserFromRequest() user: RequestUser,
+    @DeckSelect() deckSelect: DeckSelectParams,
+  ) {
+    const cacheKey = `user${user.id}_showCards_${deckSelect.showCards}`;
+
+    const cachedData = await this.cacheManager.get(cacheKey);
+    if (cachedData) {
+      return {
+        data: cachedData,
+        isCached: true,
+      };
+    }
+
+    const decks = await this.decksService.findAll(
+      { userId: user.id },
+      deckSelect,
+    );
+
+    await this.cacheManager.set(cacheKey, decks, 10000);
+
+    return {
+      data: decks,
+      isCached: false,
+    };
   }
 
   @Get('id/:id')
