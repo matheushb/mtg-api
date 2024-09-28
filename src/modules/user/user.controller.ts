@@ -5,6 +5,7 @@ import {
   Get,
   HttpCode,
   HttpStatus,
+  Inject,
   Param,
   Patch,
   Post,
@@ -18,6 +19,8 @@ import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
 import { Roles } from 'src/auth/decorators/roles.decorator';
 import { Role } from '@prisma/client';
 import { RolesGuard } from 'src/auth/guards/role.guard';
+import { CACHE_MANAGER } from '@nestjs/cache-manager';
+import { Cache } from 'cache-manager';
 
 @ApiBearerAuth()
 @UseGuards(JwtAuthGuard, RolesGuard)
@@ -25,7 +28,10 @@ import { RolesGuard } from 'src/auth/guards/role.guard';
 @ApiTags('users')
 @Controller('users')
 export class UserController {
-  constructor(private readonly userService: UserService) {}
+  constructor(
+    private readonly userService: UserService,
+    @Inject(CACHE_MANAGER) private readonly cacheManager: Cache,
+  ) {}
 
   @Post()
   async create(@Body() createUserDto: CreateUserDto) {
@@ -34,14 +40,28 @@ export class UserController {
 
   @Get()
   async findAll() {
+    const cacheKey = `user_findAll`;
+
+    const cachedData: object = await this.cacheManager.get(cacheKey);
+    if (cachedData) {
+      return {
+        ...cachedData,
+        isCached: true,
+      };
+    }
+
     const users = await this.userService.findAll();
 
-    return {
+    const response = {
       data: users,
       meta: {
         total: users.length,
       },
     };
+
+    await this.cacheManager.set(cacheKey, response, 6000);
+
+    return { ...response, isCached: false };
   }
 
   @Get('id/:id')

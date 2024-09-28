@@ -63,7 +63,7 @@ describe('DecksController', () => {
 
       jest.spyOn(service, 'findAll').mockResolvedValue(result as any);
 
-      expect(await controller.findAll()).toEqual({
+      expect(await controller.findAll({})).toEqual({
         data: result,
         meta: {
           total: result.length,

@@ -2,20 +2,17 @@ import {
   ConflictException,
   Injectable,
   NotFoundException,
-  Inject,
 } from '@nestjs/common';
-import { CACHE_MANAGER, Cache } from '@nestjs/cache-manager';
-import { UserRepository } from './user.repository';
+import { BcryptService } from 'src/common/bcrypt/bcrypt.service';
 import { CreateUserDto } from './dtos/create-user.dto';
 import { UpdateUserDto } from './dtos/update-user.dto';
-import { BcryptService } from 'src/common/bcrypt/bcrypt.service';
+import { UserRepository } from './user.repository';
 
 @Injectable()
 export class UserService {
   constructor(
     private readonly userRepository: UserRepository,
     private readonly bcryptService: BcryptService,
-    @Inject(CACHE_MANAGER) private readonly cacheManager: Cache,
   ) {}
 
   async create(createUserDto: CreateUserDto) {

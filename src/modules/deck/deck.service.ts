@@ -1,25 +1,23 @@
-import { Injectable, Inject } from '@nestjs/common';
-import { CACHE_MANAGER, Cache } from '@nestjs/cache-manager';
-import { DecksRepository } from './deck.repository';
-import { CreateDeckDto } from './dtos/create-deck.dto';
-import { UpdateDeckDto } from './dtos/update-deck.dto';
+import { Injectable } from '@nestjs/common';
+
 import {
   allowedFilters,
   DeckFilterParams,
-} from 'src/common/filters/deck-filter.params';
+} from 'src/common/filters/deck/deck-filter.params';
+import { DeckSelectParams } from 'src/common/filters/deck/deck-select.params';
+import { DecksRepository } from './deck.repository';
+import { CreateDeckDto } from './dtos/create-deck.dto';
+import { UpdateDeckDto } from './dtos/update-deck.dto';
 
 @Injectable()
 export class DecksService {
-  constructor(
-    private readonly decksRepository: DecksRepository,
-    @Inject(CACHE_MANAGER) private readonly cacheManager: Cache,
-  ) {}
+  constructor(private readonly decksRepository: DecksRepository) {}
 
   async create(createDeckDto: CreateDeckDto) {
     return await this.decksRepository.create(createDeckDto);
   }
 
-  async findAll(deckFilter: DeckFilterParams) {
+  async findAll(deckFilter: DeckFilterParams, deckSelect: DeckSelectParams) {
     const filter = {};
 
     for (const allowedFilter of allowedFilters) {
@@ -29,7 +27,8 @@ export class DecksService {
         }
       }
     }
-    return await this.decksRepository.findAll(filter);
+
+    return await this.decksRepository.findAll(filter, deckSelect);
   }
 
   async findOne(id: string) {
