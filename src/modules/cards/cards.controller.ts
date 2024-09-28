@@ -5,6 +5,7 @@ import {
   Get,
   HttpCode,
   HttpStatus,
+  Inject,
   Param,
   Patch,
   Post,
@@ -15,29 +16,54 @@ import { CreateCardDto } from './dtos/create-card.dto';
 import { UpdateCardDto } from './dtos/update-card.dto';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
+import {
+  CardFilter,
+  CardFilterParams,
+  HasFilterQueryCard,
+} from 'src/common/filters/cards/card-filter.params';
+import { Cache } from 'cache-manager';
+import { CACHE_MANAGER } from '@nestjs/cache-manager';
 
 @ApiBearerAuth()
 @UseGuards(JwtAuthGuard)
 @ApiTags('cards')
 @Controller('cards')
 export class CardsController {
-  constructor(private readonly cardsService: CardsService) {}
+  constructor(
+    private readonly cardsService: CardsService,
+    @Inject(CACHE_MANAGER) private readonly cacheManager: Cache,
+  ) {}
 
   @Post()
   async create(@Body() createCardDto: CreateCardDto) {
     return await this.cardsService.create(createCardDto);
   }
 
+  @HasFilterQueryCard()
   @Get()
-  async findAll() {
-    const cards = await this.cardsService.findAll();
+  async findAll(@CardFilter() cardFilter: CardFilterParams) {
+    const cacheKey = `cards_findAll_rarity_${cardFilter.rarity}`;
 
-    return {
+    const cachedData: object = await this.cacheManager.get(cacheKey);
+    if (cachedData) {
+      return {
+        ...cachedData,
+        isCached: true,
+      };
+    }
+
+    const cards = await this.cardsService.findAll(cardFilter);
+
+    const response = {
       data: cards,
       meta: {
         total: cards.length,
       },
     };
+
+    await this.cacheManager.set(cacheKey, response, 6000);
+
+    return { ...response, isCached: false };
   }
 
   @Get('id/:id')

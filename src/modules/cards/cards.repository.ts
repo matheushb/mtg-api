@@ -2,17 +2,23 @@ import { Injectable } from '@nestjs/common';
 import { PrismaService } from 'src/common/prisma/prisma.service';
 import { CreateCardDto } from './dtos/create-card.dto';
 import { UpdateCardDto } from './dtos/update-card.dto';
+import { Prisma } from '@prisma/client';
 
 @Injectable()
 export class CardsRepository {
+  findByIdsBatch(ids: string[]) {
+    return this.prismaService.card.findMany({ where: { id: { in: ids } } });
+  }
   constructor(private readonly prismaService: PrismaService) {}
 
   async create(createCardDto: CreateCardDto) {
     return await this.prismaService.card.create({ data: createCardDto });
   }
 
-  async findAll() {
-    const cards = await this.prismaService.card.findMany();
+  async findAll(filter: Prisma.CardWhereInput) {
+    const cards = await this.prismaService.card.findMany({
+      where: { AND: [filter] },
+    });
 
     return cards;
   }
