@@ -1,7 +1,4 @@
 import amqplib from 'amqplib';
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 async function receiveMessage() {
   const queue = 'deck_queue';
